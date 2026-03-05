@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widget_rioscamacho/config/menu/menu_items.dart';
-import 'package:widget_rioscamacho/presentation/screen/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home-screen';
   const HomeScreen({super.key});
 
   @override
@@ -48,11 +49,7 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(menuItem.subtitle),
       onTap: (){
         //Navegar a la ruta del item
-        Navigator.of(context).push(
-        MaterialPageRoute(
-        builder: (context) => const ButtonsScreen(),
-        ),
-        );
+        context.push(menuItem.link);
       }
       );
   }
