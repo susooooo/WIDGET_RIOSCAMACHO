@@ -28,4 +28,10 @@ final menuItems = <MenuItems>[
     link: '/cards',
     icon: Icons.credit_card_outlined,
   ),
+  MenuItems(
+    title: 'Progress Indicators',
+    subtitle: 'Varias indicadores de progreso en Flutter',
+    link: '/progress',
+    icon: Icons.refresh_rounded,
+  ),
 ];

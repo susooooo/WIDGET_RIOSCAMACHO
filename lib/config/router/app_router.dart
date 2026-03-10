@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widget_rioscamacho/presentation/screen/buttons/buttons_screen.dart';
 import 'package:widget_rioscamacho/presentation/screen/cards/cards_screen.dart';
 import 'package:widget_rioscamacho/presentation/screen/home/home_screen.dart';
+import 'package:widget_rioscamacho/presentation/screen/progress/progress_screen.dart';
 
 // GoRouter configuration 
 final appRouter = GoRouter(
@@ -20,6 +21,11 @@ final appRouter = GoRouter(
       path: '/cards',
       name: CardsScreen.name,
       builder:(context, state) => const CardsScreen(),
+    ),
+    GoRoute(
+      path: '/progress',
+      name: ProgressScreen.name,
+      builder:(context, state) => const ProgressScreen(),
     ),
   ],
 );
