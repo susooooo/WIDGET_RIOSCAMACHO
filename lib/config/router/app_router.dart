@@ -1,8 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:widget_rioscamacho/presentation/screen/buttons/buttons_screen.dart';
-import 'package:widget_rioscamacho/presentation/screen/cards/cards_screen.dart';
-import 'package:widget_rioscamacho/presentation/screen/home/home_screen.dart';
-import 'package:widget_rioscamacho/presentation/screen/progress/progress_screen.dart';
+import 'package:widget_rioscamacho/presentation/screen/screens.dart';
 
 // GoRouter configuration 
 final appRouter = GoRouter(
@@ -26,6 +23,31 @@ final appRouter = GoRouter(
       path: '/progress',
       name: ProgressScreen.name,
       builder:(context, state) => const ProgressScreen(),
+    ),
+    GoRoute(
+      path: '/snackbar',
+      name: SnackbarScreen.name,
+      builder:(context, state) => const SnackbarScreen(),
+    ),
+    GoRoute(
+      path: '/animation',
+      name: AnimatedScreen.name,
+      builder:(context, state) => const AnimatedScreen(),
+    ),
+    GoRoute(
+      path: '/app_tutorial',
+      name: AppTutorialScreen.name,
+      builder:(context, state) => const AppTutorialScreen(),
+    ),
+    GoRoute(
+      path: '/infinite_scroll',
+      name: InfiniteScrollScreen.name,
+      builder:(context, state) => const InfiniteScrollScreen(),
+    ),
+    GoRoute(
+      path: '/uicontrolls',
+      name: UIControlsScreen.name,
+      builder:(context, state) => const UIControlsScreen(),
     ),
   ],
 );
